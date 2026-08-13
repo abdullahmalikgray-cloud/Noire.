@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOIRÉ — Luxury Perfumes</title>
+
+
+
+/* =========================
+   BASIC
+========================= */
+
+
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+    <div class="logo">
+        NOIRÉ
+    </div>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="#home">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#products">
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="#details">
+                Details
+            </a>
+        </li>
+
+        <li>
+            <a href="#cards">
+                Cards
+            </a>
+        </li>
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+    </ul>
+
+
+    <button
+        class="cart-btn"
+        onclick="openCheckout()">
+
+        🛒 Cart:
+        <span id="cartCount">
+            0
+        </span>
+
+    </button>
+
+</nav>
+
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section
+    class="hero"
+    id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            THE ART OF
+            <br>
+            PERFUME
+        </h1>
+
+
+        <p>
+            Discover timeless fragrances crafted
+            for those who believe their scent
+            should be as unforgettable as their presence.
+        </p>
+
+
+        <a
+            href="#products"
+            class="btn">
+
+            SHOP COLLECTION
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section id="products">
+
+    <div class="section-title">
+
+        <h2>
+            Our Collection
+        </h2>
+
+        <p>
+            Discover our premium collection
+            of luxury fragrances.
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=80"
+                    alt="Black Oud">
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Black Oud
+                </h3>
+
+                <p>
+                    Dark • Powerful • Elegant
+                </p>
+
+                <div class="price">
+                    $89
+                </div>
+
+
+                <div class="card-buttons">
+
+                    <button
+                        class="black-btn"
+                        onclick="addToCart('Black Oud',89)">
+
+                        Add Cart
+
+                    </button>
+
+
+                    <button
+                        class="white-btn"
+                        onclick="showDetails(
+                        'Black Oud',
+                        '$89',
+                        'Dark, powerful and elegant fragrance with rich oud notes.',
+                        'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80'
+                        )">
+
+                        Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=700&q=80"
+                    alt="Noir Essence">
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Noir Essence
+                </h3>
+
+                <p>
+                    Warm • Smooth • Sophisticated
+                </p>
+
+                <div class="price">
+                    $79
+                </div>
+
+
+                <div class="card-buttons">
+
+                    <button
+                        class="black-btn"
+                        onclick="addToCart('Noir Essence',79)">
+
+                        Add Cart
+
+                    </button>
+
+
+                    <button
+                        class="white-btn"
+                        onclick="showDetails(
+                        'Noir Essence',
+                        '$79',
+                        'A smooth and sophisticated fragrance designed for evening occasions.',
+                        'https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=80'
+                        )">
+
+                        Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=80"
+                    alt="White Musk">
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    White Musk
+                </h3>
+
+                <p>
+                    Fresh • Clean • Modern
+                </p>
+
+                <div class="price">
+                    $69
+                </div>
+
+
+                <div class="card-buttons">
+
+                    <button
+                        class="black-btn"
+                        onclick="addToCart('White Musk',69)">
+
+                        Add Cart
+
+                    </button>
+
+
+                    <button
+                        class="white-btn"
+                        onclick="showDetails(
+                        'White Musk',
+                        '$69',
+                        'A clean and fresh fragrance perfect for everyday luxury.',
+                        'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=80'
+                        )">
+
+                        Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?auto=format&fit=crop&w=700&q=80"
+                    alt="Royal Night">
+
+            </div>
+
+
+            <div class="product-info">
+
+                <h3>
+                    Royal Night
+                </h3>
+
+                <p>
+                    Luxury • Deep • Mysterious
+                </p>
+
+                <div class="price">
+                    $99
+                </div>
+
+
+                <div class="card-buttons">
+
+                    <button
+                        class="black-btn"
+                        onclick="addToCart('Royal Night',99)">
+
+                        Add Cart
+
+                    </button>
+
+
+                    <button
+                        class="white-btn"
+                        onclick="showDetails(
+                        'Royal Night',
+                        '$99',
+                        'A luxurious and mysterious fragrance made for unforgettable nights.',
+                        'https://images.unsplash.com/photo-1587017539504-67cfbddac569?auto=format&fit=crop&w=900&q=80'
+                        )">
+
+                        Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCT DETAILS
+========================= -->
+
+<section id="details">
+
+    <div class="section-title">
+
+        <h2>
+            Featured Perfume
+        </h2>
+
+        <p>
+            Experience our signature fragrance.
+        </p>
+
+    </div>
+
+
+    <div class="detail-box">
+
+
+        <div class="detail-image">
+
+            <img
+                id="detailImage"
+                src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=80"
+                alt="Featured perfume">
+
+        </div>
+
+
+        <div class="detail-content">
+
+            <h2 id="detailName">
+                Black Oud
+            </h2>
+
+
+            <div
+                class="big-price"
+                id="detailPrice">
+
+                $89
+
+            </div>
+
+
+            <p id="detailDescription">
+
+                Dark, powerful and elegant fragrance
+                with rich oud notes. Created for people
+                who want a bold and unforgettable presence.
+
+            </p>
+
+
+            <ul class="features">
+
+                <li>
+                    ✓ Long Lasting Fragrance
+                </li>
+
+                <li>
+                    ✓ Premium Ingredients
+                </li>
+
+                <li>
+                    ✓ Unisex Perfume
+                </li>
+
+                <li>
+                    ✓ 100ml Bottle
+                </li>
+
+                <li>
+                    ✓ Luxury Packaging
+                </li>
+
+            </ul>
+
+
+            <button
+                class="black-btn"
+                style="max-width:220px"
+                onclick="addCurrentProduct()">
+
+                ADD TO CART
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CARDS
+========================= -->
+
+<section
+    class="cards-section"
+    id="cards">
+
+
+    <div class="section-title">
+
+        <h2>
+            Why Choose NOIRÉ?
+        </h2>
+
+        <p>
+            Luxury, quality and elegance
+            in every bottle.
+        </p>
+
+    </div>
+
+
+    <div class="info-cards">
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                ✦
+            </div>
+
+            <h3>
+                Premium Quality
+            </h3>
+
+            <p>
+                Carefully selected ingredients
+                create high-quality fragrances.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                ♛
+            </div>
+
+            <h3>
+                Luxury Design
+            </h3>
+
+            <p>
+                Modern bottles and sophisticated
+                packaging for a premium experience.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                ✓
+            </div>
+
+            <h3>
+                Long Lasting
+            </h3>
+
+            <p>
+                Fragrances designed to stay with
+                you throughout the day and night.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+    <div class="about">
+
+        <h2>
+            About NOIRÉ
+        </h2>
+
+        <p>
+
+            NOIRÉ is a modern luxury perfume brand
+            created for people who want their fragrance
+            to make a statement. Our collection combines
+            timeless perfume traditions with a clean,
+            contemporary aesthetic.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     NEWSLETTER
+========================= -->
+
+<section class="newsletter">
+
+    <h2>
+        Join Our Fragrance World
+    </h2>
+
+    <p>
+        Subscribe and receive updates
+        about new fragrances.
+    </p>
+
+
+    <div class="email-box">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email">
+
+
+        <button onclick="subscribe()">
+
+            SUBSCRIBE
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <h2>
+        NOIRÉ
+    </h2>
+
+    <p>
+        Luxury fragrances for
+        unforgettable moments.
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 NOIRÉ Perfumes.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     CART MESSAGE
+========================= -->
+
+<div
+    class="cart-message"
+    id="cartMessage">
+
+    Product added to cart ✓
+
+</div>
+
+
+
+<!-- =========================
+     PAYMENT MODAL
+========================= -->
+
+<div
+    class="payment-overlay"
+    id="paymentModal">
+
+
+    <div class="payment-box">
+
+
+        <button
+            class="close-payment"
+            onclick="closeCheckout()">
+
+            ×
+
+        </button>
+
+
+        <h2>
+            Checkout
+        </h2>
+
+
+        <p class="payment-subtitle">
+
+            Complete your NOIRÉ order
+
+        </p>
+
+
+
+        <!-- ORDER SUMMARY -->
+
+        <div class="order-summary">
+
+            <h3>
+                Order Summary
+            </h3>
+
+
+            <p>
+
+                <span>
+                    Items
+                </span>
+
+                <strong id="checkoutItems">
+                    0
+                </strong>
+
+            </p>
+
+
+            <p class="checkout-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong>
+
+                    $
+                    <span id="checkoutTotal">
+                        0
+                    </span>
+
+                </strong>
+
+            </p>
+
+        </div>
+
+
+
+        <h3>
+            Payment Method
+        </h3>
+
+
+
+        <!-- PAYMENT OPTIONS -->
+
+        <div class="payment-methods">
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="card"
+                    checked
+                    onchange="changePayment('card')">
+
+                💳 Credit / Debit Card
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="cod"
+                    onchange="changePayment('cod')">
+
+                💵 Cash on Delivery
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="payment"
+                    value="mobile"
+                    onchange="changePayment('mobile')">
+
+                📱 EasyPaisa / JazzCash
+
+            </label>
+
+        </div>
+
+
+
+        <!-- CARD PAYMENT -->
+
+        <div id="cardPayment">
+
+
+            <input
+                type="text"
+                id="cardName"
+                placeholder="Card Holder Name">
+
+
+            <input
+                type="text"
+                id="cardNumber"
+                placeholder="Card Number">
+
+
+            <div class="card-row">
+
+
+                <input
+                    type="text"
+                    id="expiry"
+                    placeholder="MM/YY">
+
+
+                <input
+                    type="text"
+                    id="cvv"
+                    placeholder="CVV">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE PAYMENT -->
+
+        <div
+            id="mobilePayment"
+            style="display:none">
+
+
+            <input
+                type="tel"
+                id="mobileNumber"
+                placeholder="EasyPaisa / JazzCash Number">
+
+
+            <div class="mobile-info">
+
+                For a real mobile-wallet payment,
+                connect this form to your official
+                merchant account/payment gateway.
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CASH ON DELIVERY -->
+
+        <div
+            id="codPayment"
+            style="display:none">
+
+
+            <p class="cod-text">
+
+                💵 Payment will be collected when
+                your perfume is delivered.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- PLACE ORDER -->
+
+        <button
+            class="place-order"
+            onclick="placeOrder()">
+
+            PLACE ORDER
+
+        </button>
+
+
+    </div>
+
+</div>
+
+<script src="./js/script.js"></script>
+ <!-- <link rel="stylesheet" href="./js/script.js"> -->
+
+</body>
+</html>     
